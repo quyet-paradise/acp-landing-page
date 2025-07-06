@@ -1,0 +1,73 @@
+@use "@/static/buddy-os-icons.css";
+@use "@/styles/dls/index.scss" as *;
+
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+:root {
+    --scroll-bar-color: #6C757D;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: "SF Pro Display", "Cinzel", sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* ===== Scrollbar CSS ===== */
+
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--scroll-bar-color);
+    scroll-behavior: smooth;
+}
+  
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px; 
+    scroll-behavior: smooth;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border-radius: 10px;
+    border: 3px solid var(--scroll-bar-color);
+    visibility: hidden;
+    
+    &:hover {
+        border: 3px solid var(--dls-matte-turquoise-1800);
+        visibility: visible !important;
+    }
+  
+    -moz-transition: visibility .45s ease-in-out .1s;
+    -ms-transition: visibility .45s ease-in-out .1s;
+    -o-transition: visibility .45s ease-in-out .1s;
+    -webkit-transition: visibility .45s ease-in-out .1s;
+    transition: visibility .45s ease-in-out .1s;
+}
+  
+*:hover {
+    &::-webkit-scrollbar-thumb {
+        visibility: visible;
+    }
+}
