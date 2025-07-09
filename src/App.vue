@@ -1,6 +1,8 @@
 <template>
   <TopHeader />
-  <router-view />
+  <div class="main-view">
+    <router-view />
+  </div>
   <Footer />
 </template>
 
@@ -11,9 +13,13 @@ const TopHeader = defineAsyncComponent(() => import('@/components/header/TopHead
 const Footer = defineAsyncComponent(() => import('@/components/footer/Footer.vue'))
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.main-view {
+  padding-top: 115px; //cheat header
+}
+</style>
 
-<style>
+<style lang="scss">
 #app {
   position: relative;
 }
