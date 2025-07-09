@@ -47,8 +47,4 @@ const HomeKnowledgeCenter = defineAsyncComponent(() => import('./components/Home
 const HomeTestimonials = defineAsyncComponent(() => import('./components/HomeTestimonials.vue'))
 </script>
 
-<style lang="scss" scoped>
-.homepage {
-    padding-top: 115px; //cheat header
-}
-</style>
+<style lang="scss" scoped></style>
