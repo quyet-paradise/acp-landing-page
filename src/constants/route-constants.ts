@@ -6,7 +6,8 @@ export const ROUTE_NAME = {
     OUR_FACILITY: 'Our facility',
     OUR_COMMITMENTS: 'Our commitments',
     KNOWLEDGE_CENTER: 'Knowledge center',
-    KNOWLEDGE_CENTER_ARTICLE: 'Knowledge center article'
+    KNOWLEDGE_CENTER_ARTICLE: 'Knowledge center article',
+    FAQ: 'FAQ'
 }
 
 export const PATH = {
@@ -17,5 +18,6 @@ export const PATH = {
     OUR_FACILITY: '/our-facility',
     OUR_COMMITMENTS: '/our-commitments',
     KNOWLEDGE_CENTER: '/knowledge-center',
-    KNOWLEDGE_CENTER_ARTICLE: '/knowledge-center/article/:id'
+    KNOWLEDGE_CENTER_ARTICLE: '/knowledge-center/article/:id',
+    FAQ: '/faq'
 }
