@@ -5,7 +5,8 @@ export const ROUTE_NAME = {
     HOW_COMPOUNDING_WORKS: 'How compounding works',
     OUR_FACILITY: 'Our facility',
     OUR_COMMITMENTS: 'Our commitments',
-    KNOWLEDGE_CENTER: 'Knowledge center'
+    KNOWLEDGE_CENTER: 'Knowledge center',
+    KNOWLEDGE_CENTER_ARTICLE: 'Knowledge center article'
 }
 
 export const PATH = {
@@ -15,5 +16,6 @@ export const PATH = {
     HOW_COMPOUNDING_WORKS: '/how-compounding-works',
     OUR_FACILITY: '/our-facility',
     OUR_COMMITMENTS: '/our-commitments',
-    KNOWLEDGE_CENTER: '/knowledge-center'
+    KNOWLEDGE_CENTER: '/knowledge-center',
+    KNOWLEDGE_CENTER_ARTICLE: '/knowledge-center/article/:id'
 }
