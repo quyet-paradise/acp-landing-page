@@ -7,6 +7,7 @@ const HowCompoundingWorks = () => import('@/containers/how-compounding-works/How
 const OurFacility = () => import('@/containers/our-facility/OurFacility.vue')
 const OurCommitments = () => import('@/containers/our-commitments/OurCommitments.vue')
 const KnowledgeCenter = () => import('@/containers/knowledge-center/KnowledgeCenter.vue')
+const KnowledgeCenterArticle = () => import('@/containers/knowledge-center/KnowledgeCenterArticle.vue')
 
 const routes = [
     { 
@@ -50,6 +51,12 @@ const routes = [
         name: ROUTE_NAME.KNOWLEDGE_CENTER, 
         component: KnowledgeCenter,
         meta: { title: ` ⊹ ${ROUTE_NAME.KNOWLEDGE_CENTER}` }
+    },
+    { 
+        path: PATH.KNOWLEDGE_CENTER_ARTICLE, 
+        name: ROUTE_NAME.KNOWLEDGE_CENTER_ARTICLE, 
+        component: KnowledgeCenterArticle,
+        meta: { title: ` ⊹ ${ROUTE_NAME.KNOWLEDGE_CENTER_ARTICLE}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
