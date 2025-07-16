@@ -9,6 +9,9 @@ const OurCommitments = () => import('@/containers/our-commitments/OurCommitments
 const KnowledgeCenter = () => import('@/containers/knowledge-center/KnowledgeCenter.vue')
 const KnowledgeCenterArticle = () => import('@/containers/knowledge-center/KnowledgeCenterArticle.vue')
 const FAQ = () => import('@/containers/faq/FAQ.vue')
+const PatientPortalSignup = () => import('@/containers/patient-portal/PatientPortalSignup.vue')
+const PatientPortalSignin = () => import('@/containers/patient-portal/PatientPortalSignin.vue')
+const TransferRx = () => import('@/containers/transfer-rx/TransferRx.vue')
 
 const routes = [
     { 
@@ -59,11 +62,29 @@ const routes = [
         component: KnowledgeCenterArticle,
         meta: { title: ` ⊹ ${ROUTE_NAME.KNOWLEDGE_CENTER_ARTICLE}` }
     },
-     { 
+    { 
         path: PATH.FAQ, 
         name: ROUTE_NAME.FAQ, 
         component: FAQ,
         meta: { title: ` ⊹ ${ROUTE_NAME.FAQ}` }
+    },
+    { 
+        path: PATH.PATIENT_PORTAL_SIGNUP, 
+        name: ROUTE_NAME.PATIENT_PORTAL_SIGNUP, 
+        component: PatientPortalSignup,
+        meta: { title: ` ⊹ ${ROUTE_NAME.PATIENT_PORTAL_SIGNUP}` }
+    },
+    { 
+        path: PATH.PATIENT_PORTAL_SIGNIN, 
+        name: ROUTE_NAME.PATIENT_PORTAL_SIGNIN, 
+        component: PatientPortalSignin,
+        meta: { title: ` ⊹ ${ROUTE_NAME.PATIENT_PORTAL_SIGNIN}` }
+    },
+    { 
+        path: PATH.TRANSFER_RX, 
+        name: ROUTE_NAME.TRANSFER_RX, 
+        component: TransferRx,
+        meta: { title: ` ⊹ ${ROUTE_NAME.TRANSFER_RX}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
