@@ -1,0 +1,103 @@
+.app-main-view {
+    padding-top: 115px; //cheat header
+}
+
+.global-btn-brown {
+    font-family: 'Cinzel';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    color: var(--dls-color-white);
+    padding: 24px 48px;
+    background: var(--dls-color-9f593f);
+    border-radius: 9999px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.global-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .text {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 13px;
+        letter-spacing: 1px;
+        color: var(--dls-color-9f593f);
+    }
+
+    .bo_right {
+        font-size: 10px;
+        color: var(--dls-color-9f593f);
+    }
+}
+
+//form
+.global-input-label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.32px;
+    color: var(--dls-color-2a2a2a);
+}
+
+.global-form-title {
+    font-family: 'Cinzel';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--dls-color-2a2a2a);
+}
+
+.global-input-hint {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.28px;
+    color: var(--dls-color-7d7d7d);
+}
+
+.el-form-item__content {
+    gap: 4px;
+}
+
+.el-input__wrapper {
+    border-radius: 10px !important;
+    height: 40px !important;
+    padding: 1px 16px !important;
+}
+
+.el-checkbox {
+    height: auto !important;
+    display: block !important;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: var(--dls-color-9f593f) !important;
+    border-color: var(--dls-color-9f593f) !important;
+}
+
+.el-date-editor.el-input, .el-date-editor.el-input__wrapper {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.el-select__wrapper {
+    border-radius: 10px !important;
+    height: 40px !important;
+    padding: 1px 16px !important;
+}
+
+.el-textarea__inner {
+    border-radius: 10px !important;
+}
+
+//form end

@@ -7,7 +7,10 @@ export const ROUTE_NAME = {
     OUR_COMMITMENTS: 'Our commitments',
     KNOWLEDGE_CENTER: 'Knowledge center',
     KNOWLEDGE_CENTER_ARTICLE: 'Knowledge center article',
-    FAQ: 'FAQ'
+    FAQ: 'FAQ',
+    PATIENT_PORTAL_SIGNUP: 'Patient portal signup',
+    PATIENT_PORTAL_SIGNIN: 'Patient portal signin',
+    TRANSFER_RX: 'Transfer RX'
 }
 
 export const PATH = {
@@ -19,5 +22,8 @@ export const PATH = {
     OUR_COMMITMENTS: '/our-commitments',
     KNOWLEDGE_CENTER: '/knowledge-center',
     KNOWLEDGE_CENTER_ARTICLE: '/knowledge-center/article/:id',
-    FAQ: '/faq'
+    FAQ: '/faq',
+    PATIENT_PORTAL_SIGNUP: '/patient-portal/signup',
+    PATIENT_PORTAL_SIGNIN: '/patient-portal/signin',
+    TRANSFER_RX: '/transfer-rx'
 }
