@@ -1,5 +1,6 @@
 <template>
-    <el-form class="refill"
+    <el-form 
+        class="refill"
         ref="refillFormRef"
         :model="refillForm"
         :rules="rules">
@@ -16,12 +17,12 @@
                 </el-form-item>
                 <el-form-item prop="email" class="basis-[calc(50%-16px)]">
                     <div class="global-input-label">Your email address</div>
-                    <el-input v-model="refillForm.email" type="email" placeholder="Enter your email" />
+                    <el-input v-model="refillForm.email" type="email" placeholder="email@mail.com" />
                 </el-form-item>
                 <el-form-item prop="dob" class="basis-[calc(50%-16px)]">
                     <div class="global-input-label">Date of birth *</div>
                     <el-date-picker v-model="refillForm.dob" type="date" placeholder="Enter your date of birth" format="MM/DD/YYYY" />
-                    <div class="global-input-hint">MM/DD/YYYY</div>
+                    <div class="global-input-hint">MM/dd/yyyy</div>
                 </el-form-item>
                 <el-form-item prop="phone" class="basis-[calc(50%-16px)]">
                     <div class="global-input-label">Cell phone *</div>
@@ -97,7 +98,7 @@
                 prop="question_2">
                 <div class="global-input-label">When do you need your order by? Please allow 5 business days if possible. *</div>
                 <el-date-picker v-model="refillForm.dob" type="date" placeholder="Enter your date of birth" format="MM/DD/YYYY" style="width: calc(50% - 8px) !important;" />
-                <div class="global-input-hint w-full">MM/DD/YYYY</div>
+                <div class="global-input-hint w-full">MM/dd/yyyy</div>
             </el-form-item>
 
             <div class="global-input-hint -mt-16px">The estimated due date is NOT a guarantee. Problems with payment, prescription refills, insurance processing, drug supply, compounding, or other issues may delay your order.</div>
