@@ -211,7 +211,7 @@ const rules = reactive<FormRules<TransferForm>>({
 })
 
 const otherReason = ref<string>('')
-const reasonsList = [
+const reasonsList: string[] = [
     'Price',
     'Longer lead times',
     'Unsatisfactory Service',
