@@ -3,7 +3,7 @@
         <div class="footer__top--wrapper">
             <div class="footer__top">
                 <div class="footer__top--col">
-                    <img class="logo" src="@/assets/images/footer-logo.svg" alt="logo">
+                    <img class="logo" src="@/assets/images/footer-logo.svg" alt="logo" @click="goToPage(ROUTE_NAME.HOME)">
                     <div class="social">
                         <img class="social--item" src="@/assets/images/footer-ins-icon.svg" alt="ins">
                         <img class="social--item" src="@/assets/images/footer-fb-icon.svg" alt="fb">
@@ -13,17 +13,17 @@
                 </div>
 
                 <div class="footer__top--col">
-                    <div class="nav-link">HOME</div>
-                    <div class="nav-link">SERVICES</div>
+                    <div class="nav-link" @click="goToPage(ROUTE_NAME.HOME)">HOME</div>
+                    <div class="nav-link" @click="goToPage(ROUTE_NAME.SERVICES)">SERVICES</div>
                     <div class="nav-link">PATIENTS</div>
                     <div class="nav-link">PROVIDERS</div>
                 </div>
 
                 <div class="footer__top--col">
-                    <div class="nav-link">ABOUT US</div>
-                    <div class="nav-link">KNOWLEDGE CENTER</div>
-                    <div class="nav-link">FAQ</div>
-                    <div class="nav-link">CONTACT US</div>
+                    <div class="nav-link" @click="goToPage(ROUTE_NAME.OUR_COMMITMENTS)">ABOUT US</div>
+                    <div class="nav-link" @click="goToPage(ROUTE_NAME.KNOWLEDGE_CENTER)">KNOWLEDGE CENTER</div>
+                    <div class="nav-link" @click="goToPage(ROUTE_NAME.FAQ)">FAQ</div>
+                    <div class="nav-link" @click="goToPage(ROUTE_NAME.CONTACT_US)">CONTACT US</div>
                 </div>
 
                 <div class="footer__top--col contact-col">
@@ -62,7 +62,14 @@
     </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import router from '@/router'
+
+const goToPage = (routeName: string) => {
+    router.push({ name: routeName })
+} 
+</script>
 
 <style lang="scss" scoped>
 .footer {

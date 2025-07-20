@@ -43,12 +43,19 @@
                 </div>
             </div>
 
-            <div class="global-btn-brown">BOOK A CONSULTATION</div>
+            <div class="global-btn-brown" @click="goToPage(ROUTE_NAME.BOOK_A_CONSULTATION)">BOOK A CONSULTATION</div>
         </div>
     </div>
 </template>
 
 <script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import router from '@/router'
+
+const goToPage = (routeName: string) => {
+    router.push({ name: routeName })
+} 
+
 const ourTeams: any = [
     {
         id: 1,

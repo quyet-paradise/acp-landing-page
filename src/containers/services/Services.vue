@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="global-btn-brown">CONTACT US FOR MORE INFO</div>
+            <div class="global-btn-brown" @click="goToPage(ROUTE_NAME.CONTACT_US)">CONTACT US FOR MORE INFO</div>
         </div>
     </div>
 </template>
@@ -56,6 +56,13 @@
 import { ref } from 'vue'
 
 import type { TabsPaneContext } from 'element-plus'
+
+import { ROUTE_NAME } from '@/constants/route-constants'
+import router from '@/router'
+
+const goToPage = (routeName: string) => {
+    router.push({ name: routeName })
+} 
 
 const activeName = ref('first')
 

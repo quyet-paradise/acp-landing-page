@@ -14,6 +14,8 @@ const PatientPortalSignin = () => import('@/containers/patient-portal/PatientPor
 const TransferRx = () => import('@/containers/transfer-rx/TransferRx.vue')
 const NewPatient = () => import('@/containers/new-patient/NewPatient.vue')
 const BookAConsultation = () => import('@/containers/book-a-consultation/BookAConsultation.vue')
+const ContactUs = () => import('@/containers/contact-us/ContactUs.vue')
+const MyProfile = () => import('@/containers/my-profile/MyProfile.vue')
 
 const routes = [
     { 
@@ -99,6 +101,18 @@ const routes = [
         name: ROUTE_NAME.BOOK_A_CONSULTATION, 
         component: BookAConsultation,
         meta: { title: ` ⊹ ${ROUTE_NAME.BOOK_A_CONSULTATION}` }
+    },
+    { 
+        path: PATH.CONTACT_US, 
+        name: ROUTE_NAME.CONTACT_US, 
+        component: ContactUs,
+        meta: { title: ` ⊹ ${ROUTE_NAME.CONTACT_US}` }
+    },
+    { 
+        path: PATH.MY_PROFILE, 
+        name: ROUTE_NAME.MY_PROFILE, 
+        component: MyProfile,
+        meta: { title: ` ⊹ ${ROUTE_NAME.MY_PROFILE}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404

@@ -17,7 +17,7 @@
                         <div class="article--title">{{ item?.title }}</div>
                         <div class="article--desc">{{ item?.desc }}</div>
                         <div class="article--readmore-btn">
-                            <div class="article--readmore-btn--text">Read more</div>
+                            <div class="article--readmore-btn--text" @click="goToPage(ROUTE_NAME.KNOWLEDGE_CENTER_ARTICLE, '1')">Read more</div>
                             <div class="bo_right"></div>
                         </div>
                     </div>
@@ -26,14 +26,14 @@
                     <div class="articles-list">
                         <div class="articles-list--item" v-for="item in articles" :key="item?.id">
                             <div class="articles-list--item--time">{{ item?.time }}</div>
-                            <div class="articles-list--item--title">{{ item?.title }}</div>
+                            <div class="articles-list--item--title" @click="goToPage(ROUTE_NAME.KNOWLEDGE_CENTER_ARTICLE, '1')">{{ item?.title }}</div>
                         </div>
                     </div>
 
                     <div><hr /></div>
                     
 
-                    <div class="global-btn-brown">BOOK A CONSULTATION</div>
+                    <div class="global-btn-brown"  @click="router.push({ name: ROUTE_NAME.BOOK_A_CONSULTATION })">BOOK A CONSULTATION</div>
 
                     <div><hr /></div>
 
@@ -68,6 +68,13 @@
 </template>
 
 <script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import router from '@/router'
+
+const goToPage = (routeName: string, id: string) => {
+    router.push({ name: routeName, params: { id: id } })
+} 
+
 const articles: any = [
     {
         id: 1,

@@ -12,7 +12,9 @@ export const ROUTE_NAME = {
     PATIENT_PORTAL_SIGNIN: 'Patient portal signin',
     TRANSFER_RX: 'Transfer RX',
     NEW_PATIENT: 'New patient',
-    BOOK_A_CONSULTATION: 'Book a consultation'
+    BOOK_A_CONSULTATION: 'Book a consultation',
+    CONTACT_US: 'Contact us',
+    MY_PROFILE: 'My profile'
 }
 
 export const PATH = {
@@ -29,5 +31,7 @@ export const PATH = {
     PATIENT_PORTAL_SIGNIN: '/patient-portal/signin',
     TRANSFER_RX: '/transfer-rx',
     NEW_PATIENT: '/new-patient',
-    BOOK_A_CONSULTATION: '/book-a-consultation'
+    BOOK_A_CONSULTATION: '/book-a-consultation',
+    CONTACT_US: '/contact-us',
+    MY_PROFILE: '/my-profile'
 }
