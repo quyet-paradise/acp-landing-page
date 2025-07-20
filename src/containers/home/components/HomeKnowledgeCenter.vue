@@ -12,11 +12,18 @@
             </div>
         </div>
 
-        <div class="knowledge-center--btn">READ MORE</div>
+        <div class="knowledge-center--btn" @click="goToPage(ROUTE_NAME.KNOWLEDGE_CENTER)">READ MORE</div>
     </div>
 </template>
 
 <script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import router from '@/router'
+
+const goToPage = (routeName: string) => {
+    router.push({ name: routeName })
+} 
+
 const knowledges: any = [
     {
         id: 1,

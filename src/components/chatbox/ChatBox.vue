@@ -50,6 +50,7 @@ const messageInput = ref<string>('')
     display: flex;
     align-items: flex-end;
     gap: 24px;
+    z-index: var(--dls-header-z-index);
 
     &--btn {
         background: var(--dls-color-9f593f);

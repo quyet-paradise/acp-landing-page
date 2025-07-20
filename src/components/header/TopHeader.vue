@@ -2,11 +2,11 @@
     <div class="header">
         <div class="header__top--wrapper">
             <div class="header__top">
-                <div class="header__top--schedule-btn">Schedule a Consultation</div>
+                <div class="header__top--schedule-btn" @click="goToPage(ROUTE_NAME.BOOK_A_CONSULTATION)">Schedule a Consultation</div>
 
                 <div class="header__top--functions">
                     <div class="portal">
-                        <div class="portal--link">Patient Portal</div>
+                        <div class="portal--link" @click="goToPage(ROUTE_NAME.PATIENT_PORTAL_SIGNIN)">Patient Portal</div>
                         <div>|</div>
                         <div class="portal--link">Provider Portal</div>
                     </div>
@@ -18,11 +18,11 @@
 
         <div class="header__bottom--wrapper">
             <div class="header__bottom">
-                <img class="header__bottom--logo" src="@/assets/images/header-logo.svg" alt="logo">
+                <img class="header__bottom--logo" src="@/assets/images/header-logo.svg" alt="logo" @click="goToPage(ROUTE_NAME.HOME)">
 
                 <div class="header__bottom--menu">
-                    <div class="item">HOME</div>
-                    <div class="item">SERVICES</div>
+                    <div class="item" @click="goToPage(ROUTE_NAME.HOME)">HOME</div>
+                    <div class="item" @click="goToPage(ROUTE_NAME.SERVICES)">SERVICES</div>
                     <el-popover
                         :show-arrow="false"
                         placement="bottom"
@@ -30,17 +30,17 @@
                         popper-class="box-item-menu-header">
 
                         <div class="item--popover">
-                            <div class="item--popover--text">WHAT IS COMPOUNDING</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HOW_COMPOUNDING_WORKS)">WHAT IS COMPOUNDING</div>
                             <div class="item--popover--text">WHY CHOOSE US</div>
                             <div class="item--popover--text">DELIVERY OPTIONS</div>
-                            <div class="item--popover--text">FAQ</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.FAQ)">FAQ</div>
 
                             <div class="my-2px w-full"></div>
 
-                            <div class="item--popover--btn-brown">Book a Consultation</div>
+                            <div class="item--popover--btn-brown" @click="goToPage(ROUTE_NAME.BOOK_A_CONSULTATION)">Book a Consultation</div>
 
-                            <div class="item--popover--btn-white">New patient intake</div>
-                            <div class="item--popover--btn-white">Refill Rx/Transfer Rx</div>
+                            <div class="item--popover--btn-white" @click="goToPage(ROUTE_NAME.NEW_PATIENT)">New patient intake</div>
+                            <div class="item--popover--btn-white" @click="goToPage(ROUTE_NAME.TRANSFER_RX)">Refill Rx/Transfer Rx</div>
                         </div>
 
                         <template #reference>
@@ -56,9 +56,9 @@
 
                         <div class="item--popover">
                             <div class="item--popover--text">WHY CHOOSE US</div>
-                            <div class="item--popover--text">HOW TO SEND PRESCRIPTIONS</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HOW_TO_PRESCRIBE)">HOW TO SEND PRESCRIPTIONS</div>
                             <div class="item--popover--text">HIPAA-SECURE PROVIDER SCRIPT FORM</div>
-                            <div class="item--popover--text">FAQ FOR PROVIDERS</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.FAQ)">FAQ FOR PROVIDERS</div>
 
                             <div class="my-2px w-full"></div>
 
@@ -77,8 +77,8 @@
                         popper-class="box-item-menu-header">
 
                         <div class="item--popover">
-                            <div class="item--popover--text">OUR TEAM</div>
-                            <div class="item--popover--text">OUR FACILITY</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.OUR_COMMITMENTS)">OUR TEAM</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.OUR_FACILITY)">OUR FACILITY</div>
                         </div>
 
                         <template #reference>
@@ -86,16 +86,23 @@
                         </template>
                     </el-popover>
 
-                    <div class="item">KNOWLEDGE CENTER</div>
-                    <div class="item">FAQ</div>
-                    <div class="item">CONTACT US</div>
+                    <div class="item" @click="goToPage(ROUTE_NAME.KNOWLEDGE_CENTER)">KNOWLEDGE CENTER</div>
+                    <div class="item" @click="goToPage(ROUTE_NAME.FAQ)">FAQ</div>
+                    <div class="item" @click="goToPage(ROUTE_NAME.CONTACT_US)">CONTACT US</div>
                 </div>
             </div>                              
         </div>
     </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import router from '@/router'
+
+const goToPage = (routeName: string) => {
+    router.push({ name: routeName })
+} 
+</script>
 
 <style lang="scss" scoped>
 .header {
