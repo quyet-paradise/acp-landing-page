@@ -14,7 +14,10 @@ export const ROUTE_NAME = {
     NEW_PATIENT: 'New patient',
     BOOK_A_CONSULTATION: 'Book a consultation',
     CONTACT_US: 'Contact us',
-    MY_PROFILE: 'My profile'
+    MY_PROFILE: 'My profile',
+    WRITE_COMPOUNDED_RX: 'How to write a compounded Rx',
+    UNAVAILABLE_MEDICATIONS: 'Unavailable medications',
+    PPA: 'Professional partnership / Accreditation'
 }
 
 export const PATH = {
@@ -33,5 +36,8 @@ export const PATH = {
     NEW_PATIENT: '/new-patient',
     BOOK_A_CONSULTATION: '/book-a-consultation',
     CONTACT_US: '/contact-us',
-    MY_PROFILE: '/my-profile'
+    MY_PROFILE: '/my-profile',
+    WRITE_COMPOUNDED_RX: '/how-to-write-a-compounded-rx',
+    UNAVAILABLE_MEDICATIONS: '/unavailable-medications',
+    PPA: '/ppa'
 }

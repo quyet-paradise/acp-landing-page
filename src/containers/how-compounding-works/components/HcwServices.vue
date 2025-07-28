@@ -7,7 +7,7 @@
                 <ServiceItem
                     v-for="service in servicesList"
                     :key="service?.id"
-                    :bg-image="service?.bgImage"
+                    :bg-color="service?.bgColor"
                     :text="service?.text"
                     :sub="service?.sub"
                 />
@@ -22,49 +22,49 @@ import { defineAsyncComponent } from 'vue';
 const servicesList: any = [
     {
         id: 1,
-        bgImage: '/images/services/service-1.png',
+        bgColor: '#B59782',
         text: 'BIOIDENTICAL HORMONE <br /> REPLACEMENT THERAPY <br /> (BHRT)',
         sub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         id: 2,
-        bgImage: '/images/services/service-2.png',
+        bgColor: '#B59782',
         text: 'WEIGHT LOSS <br /> COMPOUNDING',
         sub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         id: 3,
-        bgImage: '/images/services/service-3.png',
+        bgColor: '#D2BAA3',
         text: 'SEXUAL HEALTH FOR <br /> MEN & WOMEN',
         sub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         id: 4,
-        bgImage: '/images/services/service-4.png',
+        bgColor: '#D2BAA3',
         text: 'LOW DOSE NALTREXONE (LDN)',
         sub: 'LDN refers to daily dosages of naltrexone that are approximately 10% or less of the typical opioid addiction treatment dosage, commonly up to 5mg....'
     },
     {
         id: 5,
-        bgImage: '/images/services/service-5.png',
+        bgColor: '#B59782',
         text: 'HAIR LOSS SOLUTIONS',
         sub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         id: 6,
-        bgImage: '/images/services/service-6.png',
+        bgColor: '#B59782',
         text: 'DERMATOLOGICAL <br /> PREPARATIONS',
         sub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         id: 7,
-        bgImage: '/images/services/service-7.png',
+        bgColor: '#D2BAA3',
         text: 'PEDIATRICS',
         sub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         id: 8,
-        bgImage: '/images/services/service-8.png',
+        bgColor: '#D2BAA3',
         text: 'VETERINARY <br /> COMPOUNDING',
         sub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }

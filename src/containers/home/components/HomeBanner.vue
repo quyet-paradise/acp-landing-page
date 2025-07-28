@@ -8,19 +8,23 @@
             <div>Artfully Formulated</div>
         </div>
 
-        <div class="banner--btn">GET STARTED WITH ARTISAN</div>
+        <div class="banner--btn" @click="goToPage(ROUTE_NAME.CONTACT_US)">GET STARTED WITH ARTISAN</div>
     </div>
 </template>
 
 <script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import router from '@/router'
+
+const goToPage = (routeName: string) => {
+    router.push({ name: routeName })
+} 
 </script>
 
 <style lang="scss" scoped>
 .banner {
     width: 100%;
-    background-image: url('/images/banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: var(--dls-color-523616);
     padding: 48px 0 80px 0;
     display: flex;
     flex-direction: column;
@@ -45,7 +49,7 @@
     }
 
     &--btn {
-        padding: 32px 64px;
+        padding: 24px 48px;
         border-radius: 9999px;
         font-family: 'Cinzel';
         color: var(--dls-color-white);

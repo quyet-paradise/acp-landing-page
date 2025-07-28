@@ -41,7 +41,7 @@
 
                 <div class="global-btn-brown" @click="submitForm(signupFormRef)">SIGN UP</div>
 
-                <div class="w-full text-center font-400 text-16px leading-23px tracking-0.32px color-[var(--dls-color-2a2a2a)] mt-16px">Already a member? <span class="font-700 color-[var(--dls-color-9f593f)] cursor-pointer">Sign in</span></div>
+                <div class="w-full text-center font-400 text-16px leading-23px tracking-0.32px color-[var(--dls-color-2a2a2a)] mt-16px">Already a member? <span class="font-700 color-[var(--dls-color-9f593f)] cursor-pointer" @click="goToPage(ROUTE_NAME.PATIENT_PORTAL_SIGNIN)">Sign in</span></div>
             </el-form>
         </div>
     </div>
@@ -49,6 +49,8 @@
 
 <script lang="ts" setup>
 import { reactive, ref } from 'vue'
+import { ROUTE_NAME } from '@/constants/route-constants'
+import router from '@/router'
 
 import type { FormInstance, FormRules } from 'element-plus'
 
@@ -99,6 +101,10 @@ const submitForm = async (formEl: FormInstance | undefined) => {
         }
     })
 }
+
+const goToPage = (routeName: string) => {
+    router.push({ name: routeName })
+} 
 </script>
 
 <style lang="scss" scoped>

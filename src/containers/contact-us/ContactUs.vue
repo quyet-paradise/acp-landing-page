@@ -9,7 +9,7 @@
 
             <div class="global-form-title">CONTACT US</div>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.491672742134!2d-117.8311336238047!3d33.74795843373523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdbd83453d7c5%3A0xafcaa97c67a4f405!2s17400%20Irvine%20Blvd%2C%20Tustin%2C%20CA%2092780%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1752982597258!5m2!1svi!2s" width="100%" height="270" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13269.967377050523!2d-117.828559!3d33.747954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdbd83453d7c5%3A0xafcaa97c67a4f405!2s17400%20Irvine%20Blvd%2C%20Tustin%2C%20CA%2092780%2C%20USA!5e0!3m2!1sen!2s!4v1753608179574!5m2!1sen!2s" width="100%" height="270" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <el-form
                 class="contact-us--container--form"
@@ -31,7 +31,7 @@
 
                             <div><hr /></div>
 
-                            <div class="font-700 text-16px leading-23px tracking-0.32px color-[var(--dls-color-2a2a2a)]">Monday – Friday 9:00 AM – 5:30 PM <br /> Saturday – Sunday CLOSED</div>
+                            <div class="font-700 text-16px leading-23px tracking-0.32px color-[var(--dls-color-2a2a2a)]">Monday – Friday 9:30 AM – 5:00 PM <br /> Saturday: 10:00 AM - 02:00 PM <br /> Sunday: CLOSED</div>
                             <div class="font-400 text-16px leading-23px tracking-0.32px color-[var(--dls-color-2a2a2a)]">Artisan Compounding Pharmacy is closed on all major holidays, including New Year’s Day, Memorial Day, Independence Day, Labor Day, Thanksgiving, and Christmas. <br /> We also close early on Christmas Eve and <br /> New Year’s Eve.</div>
                         </div>
                     </div>
@@ -142,15 +142,15 @@ const rules = reactive<FormRules<ContactUsForm>>({
 const contactInfo: any = [
     {
         id: 1,
-        icon: callIcon,
-        title: 'Call Us',
-        info: '(212) 967-0892'
+        icon: localtionIcon,
+        title: 'Address',
+        info: '17400 Irvine Blvd, Suite H Tustin, CA 92780'
     },
     {
         id: 2,
-        icon: emailIcon,
-        title: 'Email',
-        info: 'hello@artisanpharmacy.com'
+        icon: callIcon,
+        title: 'Call or Text',
+        info: '(212) 967-0892'
     },
     {
         id: 3,
@@ -160,9 +160,9 @@ const contactInfo: any = [
     },
     {
         id: 4,
-        icon: localtionIcon,
-        title: 'Address',
-        info: '17400 Irvine Blvd, Suite H Tustin, CA 92780'
+        icon: emailIcon,
+        title: 'Email',
+        info: 'hello@artisanpharmacy.com'
     }
 ]
 

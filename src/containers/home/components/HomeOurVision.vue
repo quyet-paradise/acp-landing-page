@@ -7,12 +7,19 @@
 
             <div class="subtitle">Is a world where every individual receives treatment tailored to their unique body, <br /> lifestyle, and goals—delivered with care, integrity, and scientific precision.</div>
 
-            <div class="btn">GET STARTED WITH ARTISAN</div>
+            <div class="btn" @click="goToPage(ROUTE_NAME.CONTACT_US)">GET STARTED WITH ARTISAN</div>
         </div>
     </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import router from '@/router'
+
+const goToPage = (routeName: string) => {
+    router.push({ name: routeName })
+} 
+</script>
 
 <style lang="scss" scoped>
 .our-vision {
