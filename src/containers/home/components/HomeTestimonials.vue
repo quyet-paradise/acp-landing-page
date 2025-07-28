@@ -26,8 +26,8 @@
             </div>
 
             <div class="testimonials--container--pcca">
-                <div class="text">PROUD MEMBERS OF</div>
-                <img src="/images/testimonials/pcca-icon.png" alt="pcca">
+                <div class="text">PROUD MEMBER OF</div>
+                <img class="cursor-pointer" src="/images/testimonials/pcca-icon.png" alt="pcca" @click="goToPCCAPage">
             </div>
         </div>
     </div>
@@ -84,6 +84,10 @@ const next = () => {
     }
 
     setActiveItem(activeItem.value)
+}
+
+const goToPCCAPage = () => {
+    window.open('https://thepccastandard.pccarx.com/', '_blank')
 }
 </script>
 

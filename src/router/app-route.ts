@@ -16,6 +16,9 @@ const NewPatient = () => import('@/containers/new-patient/NewPatient.vue')
 const BookAConsultation = () => import('@/containers/book-a-consultation/BookAConsultation.vue')
 const ContactUs = () => import('@/containers/contact-us/ContactUs.vue')
 const MyProfile = () => import('@/containers/my-profile/MyProfile.vue')
+const WriteCompoundedRx = () => import('@/containers/write-compounded-rx/WriteCompoundedRx.vue')
+const UnavailableMedications = () => import('@/containers/unavailable-medications/UnavailableMedications.vue')
+const PPA = () => import('@/containers/ppa/PPA.vue')
 
 const routes = [
     { 
@@ -113,6 +116,24 @@ const routes = [
         name: ROUTE_NAME.MY_PROFILE, 
         component: MyProfile,
         meta: { title: ` ⊹ ${ROUTE_NAME.MY_PROFILE}` }
+    },
+    { 
+        path: PATH.WRITE_COMPOUNDED_RX, 
+        name: ROUTE_NAME.WRITE_COMPOUNDED_RX, 
+        component: WriteCompoundedRx,
+        meta: { title: ` ⊹ ${ROUTE_NAME.WRITE_COMPOUNDED_RX}` }
+    },
+    { 
+        path: PATH.UNAVAILABLE_MEDICATIONS, 
+        name: ROUTE_NAME.UNAVAILABLE_MEDICATIONS, 
+        component: UnavailableMedications,
+        meta: { title: ` ⊹ ${ROUTE_NAME.UNAVAILABLE_MEDICATIONS}` }
+    },
+    { 
+        path: PATH.PPA, 
+        name: ROUTE_NAME.PPA, 
+        component: PPA,
+        meta: { title: ` ⊹ ${ROUTE_NAME.PPA}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404

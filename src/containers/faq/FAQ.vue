@@ -17,7 +17,7 @@
                             <div v-else class="bo_add"></div>
                         </span>
                     </template>
-                    <div>{{ item?.answer }}</div>
+                    <div v-html="item?.answer"></div>
                 </el-collapse-item>
             </el-collapse>
         </div>
@@ -36,34 +36,59 @@ const faqs: any = [
     },
     {
         id: '2',
-        question: 'How long does it take Artisan to fill a prescription?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        question: 'Do all pharmacies compound medication? What sets Artisan Compounding Pharmacy apart?',
+        answer: 'No, most pharmacies do not compound medications. Compounding requires specialized training, equipment, and strict quality standards. At Artisan Compounding Pharmacy, we specialize in personalized, high-quality compounded medications. Our pharmacists are trained by the Professional Compounding Centers of America (PCCA) – a globally recognized leader in compounding education and innovation. We use only pharmaceutical-grade ingredients in a USP <795> and USP <800> compliant lab.'
     },
     {
         id: '3',
-        question: 'Can Artisan ship my prescription to me?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        question: 'What do you mean by pharmaceutical-grade ingredients?',
+        answer: 'Pharmaceutical-grade ingredients are the highest quality raw materials that meet strict standards for purity, strength, and consistency set by the United States Pharmacopeia (USP) or other trusted authorities. <br /> We source our ingredients only from trusted suppliers to ensure that every compounded medication is safe, effective and tailored to your exact needs.'
     },
     {
         id: '4',
-        question: 'Are Artisan compounded medications covered by insurance?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        question: 'Do I need a prescription for compounded medications?',
+        answer: 'Yes, all compounded medications require a prescription from a doctor’s office.'
     },
     {
         id: '5',
-        question: 'What is your return policy?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        question: 'What if my doctor is unfamiliar or uncomfortable with prescribing compounds?',
+        answer: 'We’re happy to work directly with your doctor, whether by providing a prescription form with suggested formulations or recommending a custom formulation tailored to your needs. We can also connect you with local physicians experienced in compounding care.'
     },
     {
         id: '6',
-        question: 'Return Shipping',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        question: 'Are compounded medications covered by insurance?',
+        answer: 'Unfortunately, many insurance companies do not cover compounded medications, leaving you responsible for the cost. To make your treatment more affordable, we offer discounted pricing on extended supplies: <br /> *Up to 10% discount for a 2-month supply <br /> *Up to 15% discount for a 3-month supply <br /> Due to medication stability, not all compounded medications are eligible for extended fills. Contact us for details or a personalized quote. We’re happy to help!'
     },
     {
         id: '7',
-        question: 'Do I need a prescription for a personalized medication?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    }
+        question: 'How long does it take for my prescription to be ready?',
+        answer: 'Our goal is a 2-4 business days turnaround for every prescription upon receiving your order. Since compounded medications are custom-made and cannot be reused, we’re required to confirm and get the payment before compounding new prescription to avoid waste. <br /> You’ll receive a text or phone call as soon as your prescription is ready.'
+    },
+    {
+        id: '8',
+        question: 'What can cause a delay?',
+        answer: 'In some cases, if your prescription requires a hard-to-find ingredient, there may be a 1-2 business days delay while we order it. We’ll notify you right away if your medication will be delayed.'
+    },
+    {
+        id: '9',
+        question: 'Do you offer pickup, delivery or shipping options?',
+        answer: 'Yes! You’re welcome to pick up your medications in person at our Tustin location, or we can ship them directly via FedEx to your home for your convenience. We also offer local delivery. Just ask us what option works best for you!'
+    },
+    {
+        id: '10',
+        question: 'Do you offer a Military discount?',
+        answer: 'We are grateful for the service and sacrifice of our military members. To show our appreciation, we offer a 10% discount to all retired and active military personnel with valid government-issued ID. The discount applies to the military member only.'
+    },
+    {
+        id: '11',
+        question: 'What is the return policy?',
+        answer: '**Compounded medications cannot be returned to the pharmacy under any circumstance after dispensing** <br /> For over-the-counter (OTC) products/supplements purchased in store, customers may return any unopened OTC merchandise within 14 days of purchase with the original receipt. A refund will be issued in the original form of payment. <br /> For OTC products/supplements purchased online, customers can send unopened merchandise and original receipt back to us within 14 days of delivery for a refund less the shipping fee. <br /> Customers must carefully package the product(s) as you are responsible for damage during shipment. Customers are responsible for the cost of return shipping <br /> Ship your return to: <br /> Artisan Compounding Pharmacy <br /> 17400 Irvine Blvd, Suite H <br /> Tustin, CA 92780'
+    },
+    {
+        id: '12',
+        question: 'Items arrived damaged or defective?',
+        answer: 'We carefully package every order to ensure it arrives in excellent condition. However, if your order is damaged during shipping, please contact us at --@artisan-rx.com and we’ll be happy to assist you.'
+    },
 ]
 
 const activeNames = ref(['1'])
@@ -111,6 +136,8 @@ const activeNames = ref(['1'])
 .el-collapse-item__header {
     background: var(--dls-color-f4eee9);
     border-bottom: 1px solid #c8c8c8;
+    height: auto;
+    gap: 8px;
 }
 
 .el-collapse-item__wrap {

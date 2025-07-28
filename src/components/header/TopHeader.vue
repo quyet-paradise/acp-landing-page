@@ -22,7 +22,45 @@
 
                 <div class="header__bottom--menu">
                     <div class="item" @click="goToPage(ROUTE_NAME.HOME)">HOME</div>
-                    <div class="item" @click="goToPage(ROUTE_NAME.SERVICES)">SERVICES</div>
+
+                    <el-popover
+                        :show-arrow="false"
+                        placement="bottom"
+                        :width="350"
+                        popper-class="box-item-menu-header">
+
+                        <div class="item--popover">
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.OUR_COMMITMENTS)">OUR TEAM</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.OUR_FACILITY)">OUR FACILITY</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.PPA)">PROFESSIONAL PARTNERSHIP / ACCREDITATION</div>
+                        </div>
+
+                        <template #reference>
+                            <div class="item">ABOUT US</div>
+                        </template>
+                    </el-popover>
+
+                    <el-popover
+                        :show-arrow="false"
+                        placement="bottom"
+                        :width="400"
+                        popper-class="box-item-menu-header">
+
+                        <div class="item--popover">
+                            <div class="item--popover--text">BIOIDENTICAL HORMONE REPLACEMENT THERAPY (BHRT)</div>
+                            <div class="item--popover--text">WEIGHT LOSS COMPOUNDING</div>
+                            <div class="item--popover--text">SEXUAL HEALTH FOR MEN & WOMEN</div>
+                            <div class="item--popover--text">LOW DOSE NALTREXONE (LDN)</div>
+                            <div class="item--popover--text">HAIR LOSS SOLUTIONS</div>
+                            <div class="item--popover--text">DERMATOLOGICAL PREPARATIONS</div>
+                            <div class="item--popover--text">PEDIATRICS</div>
+                            <div class="item--popover--text">VETERINARY COMPOUNDING</div>
+                        </div>
+
+                        <template #reference>
+                            <div class="item" @click="goToPage(ROUTE_NAME.SERVICES)">SERVICES</div>
+                        </template>
+                    </el-popover>
                     <el-popover
                         :show-arrow="false"
                         placement="bottom"
@@ -31,8 +69,7 @@
 
                         <div class="item--popover">
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HOW_COMPOUNDING_WORKS)">WHAT IS COMPOUNDING</div>
-                            <div class="item--popover--text">WHY CHOOSE US</div>
-                            <div class="item--popover--text">DELIVERY OPTIONS</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.OUR_COMMITMENTS)">WHY CHOOSE US</div>
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.FAQ)">FAQ</div>
 
                             <div class="my-2px w-full"></div>
@@ -55,9 +92,10 @@
                         popper-class="box-item-menu-header">
 
                         <div class="item--popover">
-                            <div class="item--popover--text">WHY CHOOSE US</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.OUR_COMMITMENTS)">WHY CHOOSE US</div>
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HOW_TO_PRESCRIBE)">HOW TO SEND PRESCRIPTIONS</div>
-                            <div class="item--popover--text">HIPAA-SECURE PROVIDER SCRIPT FORM</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.WRITE_COMPOUNDED_RX)">HOW TO WRITE A COMPOUNDED RX</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.UNAVAILABLE_MEDICATIONS)">UNAVAILABLE MEDICATIONS</div>
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.FAQ)">FAQ FOR PROVIDERS</div>
 
                             <div class="my-2px w-full"></div>
@@ -67,22 +105,6 @@
 
                         <template #reference>
                             <div class="item">PROVIDERS</div>
-                        </template>
-                    </el-popover>
-
-                    <el-popover
-                        :show-arrow="false"
-                        placement="bottom"
-                        :width="288"
-                        popper-class="box-item-menu-header">
-
-                        <div class="item--popover">
-                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.OUR_COMMITMENTS)">OUR TEAM</div>
-                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.OUR_FACILITY)">OUR FACILITY</div>
-                        </div>
-
-                        <template #reference>
-                            <div class="item">ABOUT US</div>
                         </template>
                     </el-popover>
 

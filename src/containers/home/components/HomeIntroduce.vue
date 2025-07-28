@@ -1,7 +1,5 @@
 <template>
     <div class="introduce">
-        <div class="introduce--title">@ARTISANCOMPOUNDING</div>
-
         <div class="introduce--list-img">
             <Vue3Marquee :pause-on-hover="true" :duration="20" :gradient="true" :gradient-color="[255, 255, 255]" gradient-length="10%" :clone="true">
                 <div class="item" v-for="(img, index) in imgs" :key="index">
@@ -12,7 +10,7 @@
 
         <div class="introduce--ins-btn">
             <img src="@/assets/images/footer-ins-icon.svg" alt="icon">
-            <div>CHECK OUR IG</div>
+            <div>ARTISAN COMPOUNDING</div>
         </div>
     </div>
 </template>
