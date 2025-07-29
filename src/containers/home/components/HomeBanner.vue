@@ -9,6 +9,12 @@
         </div>
 
         <div class="banner--btn" @click="goToPage(ROUTE_NAME.CONTACT_US)">GET STARTED WITH ARTISAN</div>
+
+        <div class="banner--mask"></div>
+
+        <video id="bannerVideo" autoplay :controls="false" loop muted src="/videos/banner.mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </template>
 
@@ -24,17 +30,40 @@ const goToPage = (routeName: string) => {
 <style lang="scss" scoped>
 .banner {
     width: 100%;
-    background: var(--dls-color-523616);
     padding: 48px 0 80px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 64px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    
+    #bannerVideo {
+        position: absolute;
+        top: -180px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: var(--dls-z-index-1);
+    }
+
+    &--mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: var(--dls-z-index-2);
+    }
 
     &--logo {
         height: 218px;
         width: auto;
+        position: relative;
+        z-index: var(--dls-z-index-3);
     }
 
     &--text {
@@ -46,6 +75,9 @@ const goToPage = (routeName: string) => {
         font-size: 20px;
         font-weight: 400;
         letter-spacing: 2px;
+        position: relative;
+        z-index: var(--dls-z-index-3);
+
     }
 
     &--btn {
@@ -59,9 +91,25 @@ const goToPage = (routeName: string) => {
         letter-spacing: 2px;
         cursor: pointer;
         line-height: 100%;
+        position: relative;
+        z-index: var(--dls-z-index-3);
 
         &:hover {
             opacity: .8;
+        }
+    }
+
+    @media (max-width: 1316px) {
+        gap: 48px;
+
+        #bannerVideo {
+            top: -100px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        #bannerVideo {
+            top: 0;
         }
     }
 }
