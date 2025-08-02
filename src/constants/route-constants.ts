@@ -17,7 +17,15 @@ export const ROUTE_NAME = {
     MY_PROFILE: 'My profile',
     WRITE_COMPOUNDED_RX: 'How to write a compounded Rx',
     UNAVAILABLE_MEDICATIONS: 'Unavailable medications',
-    PPA: 'Professional partnership / Accreditation'
+    PPA: 'Professional partnership / Accreditation',
+    BHRT_SERVICE: 'Biological Hormone Replacement Therapy (BHRT)',
+    WEIGHT_LOSS_SERVICE: 'Weight Loss Compounding',
+    SEXUAL_HEALTH_SERVICE: 'Sexual health for men & women',
+    LDN_SERVICE: 'Low-Dose Naltrexone (LDN)',
+    HAIR_LOSS_SERVICE: 'Hair loss solutions',
+    DERMATO_LOGICAL_SERVICE: 'Dermatological preparations',
+    PEDIATRICS_SERVICE: 'Pediatrics',
+    VETERINARY_SERVICE: 'Veterinary compounding'
 }
 
 export const PATH = {
@@ -39,5 +47,13 @@ export const PATH = {
     MY_PROFILE: '/my-profile',
     WRITE_COMPOUNDED_RX: '/how-to-write-a-compounded-rx',
     UNAVAILABLE_MEDICATIONS: '/unavailable-medications',
-    PPA: '/ppa'
+    PPA: '/ppa',
+    BHRT_SERVICE: '/services/bhrt',
+    WEIGHT_LOSS_SERVICE: '/services/weight-loss-compounding',
+    SEXUAL_HEALTH_SERVICE: '/services/sexual-health-for-men-and-women',
+    LDN_SERVICE: '/services/ldn',
+    HAIR_LOSS_SERVICE: '/services/hair-loss-solutions',
+    DERMATO_LOGICAL_SERVICE: '/services/dermatological-preparations',
+    PEDIATRICS_SERVICE: '/services/pediatrics',
+    VETERINARY_SERVICE: '/services/veterinary-compounding'
 }

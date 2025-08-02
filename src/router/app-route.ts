@@ -20,6 +20,15 @@ const WriteCompoundedRx = () => import('@/containers/write-compounded-rx/WriteCo
 const UnavailableMedications = () => import('@/containers/unavailable-medications/UnavailableMedications.vue')
 const PPA = () => import('@/containers/ppa/PPA.vue')
 
+const BHRTService = () => import('@/containers/services/service-detail/BHRTService.vue')
+const WeightLossService = () => import('@/containers/services/service-detail/WeightLossService.vue')
+const SexualHealthService = () => import('@/containers/services/service-detail/SexualHealthService.vue')
+const LDNService = () => import('@/containers/services/service-detail/LDNService.vue')
+const HairLossService = () => import('@/containers/services/service-detail/HairLossService.vue')
+const DermatoLogicalService = () => import('@/containers/services/service-detail/DermatoLogicalService.vue')
+const PediatricsService = () => import('@/containers/services/service-detail/PediatricsService.vue')
+const VeterinaryService = () => import('@/containers/services/service-detail/VeterinaryService.vue')
+
 const routes = [
     { 
         path: PATH.HOME, 
@@ -134,6 +143,54 @@ const routes = [
         name: ROUTE_NAME.PPA, 
         component: PPA,
         meta: { title: ` ⊹ ${ROUTE_NAME.PPA}` }
+    },
+    { 
+        path: PATH.BHRT_SERVICE, 
+        name: ROUTE_NAME.BHRT_SERVICE, 
+        component: BHRTService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.BHRT_SERVICE}` }
+    },
+    { 
+        path: PATH.WEIGHT_LOSS_SERVICE, 
+        name: ROUTE_NAME.WEIGHT_LOSS_SERVICE, 
+        component: WeightLossService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.WEIGHT_LOSS_SERVICE}` }
+    },
+    { 
+        path: PATH.SEXUAL_HEALTH_SERVICE, 
+        name: ROUTE_NAME.SEXUAL_HEALTH_SERVICE, 
+        component: SexualHealthService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.SEXUAL_HEALTH_SERVICE}` }
+    },
+    { 
+        path: PATH.LDN_SERVICE, 
+        name: ROUTE_NAME.LDN_SERVICE, 
+        component: LDNService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.LDN_SERVICE}` }
+    },
+    { 
+        path: PATH.HAIR_LOSS_SERVICE, 
+        name: ROUTE_NAME.HAIR_LOSS_SERVICE, 
+        component: HairLossService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.HAIR_LOSS_SERVICE}` }
+    },
+    { 
+        path: PATH.DERMATO_LOGICAL_SERVICE, 
+        name: ROUTE_NAME.DERMATO_LOGICAL_SERVICE, 
+        component: DermatoLogicalService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.DERMATO_LOGICAL_SERVICE}` }
+    },
+    { 
+        path: PATH.PEDIATRICS_SERVICE, 
+        name: ROUTE_NAME.PEDIATRICS_SERVICE, 
+        component: PediatricsService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.PEDIATRICS_SERVICE}` }
+    },
+    { 
+        path: PATH.VETERINARY_SERVICE, 
+        name: ROUTE_NAME.VETERINARY_SERVICE, 
+        component: VeterinaryService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.VETERINARY_SERVICE}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404

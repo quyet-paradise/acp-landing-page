@@ -47,14 +47,14 @@
                         popper-class="box-item-menu-header">
 
                         <div class="item--popover">
-                            <div class="item--popover--text">BIOIDENTICAL HORMONE REPLACEMENT THERAPY (BHRT)</div>
-                            <div class="item--popover--text">WEIGHT LOSS COMPOUNDING</div>
-                            <div class="item--popover--text">SEXUAL HEALTH FOR MEN & WOMEN</div>
-                            <div class="item--popover--text">LOW DOSE NALTREXONE (LDN)</div>
-                            <div class="item--popover--text">HAIR LOSS SOLUTIONS</div>
-                            <div class="item--popover--text">DERMATOLOGICAL PREPARATIONS</div>
-                            <div class="item--popover--text">PEDIATRICS</div>
-                            <div class="item--popover--text">VETERINARY COMPOUNDING</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.BHRT_SERVICE)">BIOIDENTICAL HORMONE REPLACEMENT THERAPY (BHRT)</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS COMPOUNDING</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.LDN_SERVICE)">LOW DOSE NALTREXONE (LDN)</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HAIR_LOSS_SERVICE)">HAIR LOSS SOLUTIONS</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.DERMATO_LOGICAL_SERVICE)">DERMATOLOGICAL PREPARATIONS</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.PEDIATRICS_SERVICE)">PEDIATRICS</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.VETERINARY_SERVICE)">VETERINARY COMPOUNDING</div>
                         </div>
 
                         <template #reference>
