@@ -30,7 +30,7 @@
         </div>
 
         <div class="chatbox--btn" @click="isOpen = !isOpen">
-            <img src="@/assets/images/chatbox/message-icon.svg" alt="">
+            <el-icon :size="24" color="#2a2a2a"><ChatDotRound /></el-icon>
         </div>
     </div>
 </template>
@@ -45,7 +45,7 @@ const messageInput = ref<string>('')
 <style lang="scss" scoped>
 .chatbox {
     position: fixed;
-    bottom: 60px;
+    bottom: 50px;
     right: 50px;
     display: flex;
     align-items: flex-end;
@@ -53,19 +53,19 @@ const messageInput = ref<string>('')
     z-index: var(--dls-header-z-index);
 
     &--btn {
-        background: var(--dls-color-9f593f);
+        background: var(--dls-color-white);
+        border: 1px solid var(--dls-color-2a2a2a);
         padding: 16px;
         border-radius: 9999px;
         cursor: pointer;
-        width: 78px;
-        height: 78px;
+        width: 50px;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        img {
-            width: 34px;
-            height: 34px;
+        &:hover {
+            opacity: .8;
         }
     }
 }

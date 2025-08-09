@@ -9,10 +9,16 @@
 
             <div class="title">SEXUAL HEALTH FOR MEN & WOMEN</div>
 
-            <div class="paragraph">At Artisan Compounding Pharmacy we believe intimacy is more than a moment. It’s a pillar of overall wellness. When hormones, circulation, or stress get in the way, standardized pills often miss the mark. Our pharmacists work with your prescriber to compound custom dosed, clinically backed medications in easy to use forms that fit real life so you can stop worrying about performance and start enjoying connection.</div>
+            <div class="paragraph text-center">At Artisan Compounding Pharmacy we believe intimacy is more than a moment. It’s a pillar of overall wellness. When hormones, circulation, or stress get in the way, standardized pills often miss the mark. Our pharmacists work with your prescriber to compound custom dosed, clinically backed medications in easy to use forms that fit real life so you can stop worrying about performance and start enjoying connection.</div>
 
-            <div class="paragraph"><b>For him:</b> common concerns are slow arousal, softer erections, stamina dips.</div>
-            <div class="note">Targeted options we can compound</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">FOR HIM</div>
+            </div>
+
+            <div class="paragraph">Common concerns: reduced libido, erectile dysfunction, prostate problems, reduced muscle mass.</div>
+
+            <div class="paragraph text-center">What we can compound</div>
 
             <table>
                 <tbody>
@@ -53,9 +59,14 @@
                 </tbody>
             </table>
 
-            <div><hr /></div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">FOR HER</div>
+            </div>
 
-            <div class="paragraph"><b>For her:</b> common concerns: low desire, difficulty reaching climax, dryness or discomfort.</div>
+            <div class="paragraph">Common concerns: low desire, difficulty reaching climax, dryness or discomfort.</div>
+            
+            <div class="paragraph text-center">What we can compound</div>
 
             <table>
                 <tbody>

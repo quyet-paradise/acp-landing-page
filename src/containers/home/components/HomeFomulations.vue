@@ -189,16 +189,12 @@ const preBenefits: any = [
 
             .patient-img {
                 flex: 1 0 50%;
-                background-image: url('/images/formulations/patient-img.png');
-                background-repeat: no-repeat;
-                background-size: cover;
+                background: var(--dls-color-d2baa3);
             }
 
             .pre-img {
                 flex: 1 0 50%;
-                background-image: url('/images/formulations/pre-img.png');
-                background-repeat: no-repeat;
-                background-size: cover;
+                background: var(--dls-color-b59782);
             }
 
             .patient-benefits {

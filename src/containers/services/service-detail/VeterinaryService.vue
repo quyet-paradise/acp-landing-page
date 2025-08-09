@@ -7,13 +7,14 @@
                 <div class="text">SERVICES</div>
             </div>
 
-            <div class="title">VETERINARY COMPOUNDING</div>
+            <div class="title">VETERINARY</div>
 
-            <div class="paragraph">Every pet is unique so their medicine should be, too. When your cat spits out tablets, your dog rejects bitter liquids, or your rabbit needs a micro-dose no manufacturer sells, Artisan Compounding Pharmacy turns frustration into relief with pharmacy-grade veterinary compounding. We transform proven drugs into pet-friendly flavors, strengths, and delivery forms so dosing is easier, safer, and far less stressful for everyone.</div>
+            <div class="paragraph text-center">Every pet is unique so their medicine should be, too. When your cat spits out tablets, your dog rejects bitter liquids, or your rabbit needs a micro-dose no manufacturer sells, Artisan Compounding Pharmacy turns frustration into relief with pharmacy-grade veterinary compounding. We transform proven drugs into pet-friendly flavors, strengths, and delivery forms so dosing is easier, safer, and far less stressful for everyone.</div>
 
-            <div><hr /></div>
-
-            <div class="heading">Common Conditions We Treat & How We Make Therapy Simple</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">COMPLICATED CONDITIONS & SIMPLE THERAPY</div>
+            </div>
             <table>
                 <tbody>
                     <tr>
@@ -82,9 +83,11 @@
                 </tbody>
             </table>
             <div class="note">* All prescriptions must come from a licensed veterinarian.</div>
-            <div><hr /></div>
 
-            <div class="heading">Delivery Forms Pets (and Owners) Love</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">DELIVERY FORMS PETS (AND OWNERS) LOVE</div>
+            </div>
             <ul>
                 <li><b>Flavored Oral Suspensions:</b> over 20 natural flavors (think tuna-bisque, peanut-crunch, banana cream) in sugar- or xylitol-free bases.</li>
                 <li><b>Soft Chew Treats:</b> pliable, low-crumb bites that hide even strong odors.</li>
@@ -95,9 +98,11 @@
                 <li><b>Suppositories:</b> last-resort option when oral or topical routes fail (post-surgery GI cases).</li>
             </ul>
             <div class="paragraph">All packaged in child-resistant, leak-proof containers with color-coded syringes and easy-dose charts.</div>
-            <div><hr /></div>
 
-            <div class="heading">The Paws-itive Care Path</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">THE PAWS-ITIVE CARE PATH</div>
+            </div>
             <ol>
                 <li><b>Prescription Arrives</b> – via e-fax, email, or paw-delivered script.</li>
                 <li><b>Flavor & Form Consultation</b> – we call you (or your clinic) to pick the perfect delivery method.</li>

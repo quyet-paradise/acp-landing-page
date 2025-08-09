@@ -121,7 +121,7 @@ const goToPage = (routeName: string) => {
                         &-col {
                             display: flex;
                             flex-direction: column;
-                            gap: 24px;
+                            gap: 16px;
 
                             .nav-link {
                                 color: var(--dls-color-white);

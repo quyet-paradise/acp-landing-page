@@ -12,7 +12,7 @@
             <div class="ppa--container--content">
                 <div class="header">Professional Partnership</div>
 
-                <div class="paragraph">We proudly partner with the Professional Compounding Centers of America (PCCA) - a globally recognized leader in compounding education, innovation, and pharmaceutical-grade ingredients. Through this partnership, our pharmacists receive advanced training, and we have access to the latest research-based formulations and high-quality raw materials.</div>
+                <div class="paragraph">We proudly partner with the Professional Compounding Centers of America (<a href="https://thepccastandard.pccarx.com/" target="_blank">PCCA</a>) - a globally recognized leader in compounding education, innovation, and pharmaceutical-grade ingredients. Through this partnership, our pharmacists receive advanced training, and we have access to the latest research-based formulations and high-quality raw materials.</div>
 
                 <div class="paragraph">This commitment to excellence ensures that every compound we create is safe, effective, and customized to your specific needs.</div>
 

@@ -9,13 +9,14 @@
 
             <div class="title">NO MORE NEEDLE - DISCOVER SUBLINGUAL <br /> WEIGHT LOSS COMPOUNDING</div>
 
-            <div class="paragraph">Our custom compounded sublingual formula delivers today’s most effective GLP 1–based weight loss medication* under the tongue. No injections, no sharps, no weekly clinic visits!</div>
+            <div class="paragraph text-center">Our custom compounded sublingual formula delivers today’s most effective GLP 1–based weight loss medication* under the tongue. No injections, no sharps, no weekly clinic visits!</div>
 
             <div class="note">*This compounded medication is prepared exclusively for you pursuant to a valid prescription. </div>
 
-            <div><hr /></div>
-
-            <div class="heading">Why Go Sublingual?</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">WHY GO SUBLINGUAL?</div>
+            </div>
             
             <table>
                 <tbody>
@@ -46,15 +47,17 @@
                 </tbody>
             </table>
 
-            <div><hr /></div>
-
-            <div class="heading">How It Works</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">HOW IT WORKS</div>
+            </div>
 
             <div class="paragraph">Our pharmacist compounds a precise micro dose of a GLP 1 receptor agonist plus absorption enhancers into a flavored solution. Place the measured drops under your tongue, hold for 90 seconds, then swallow. The medication signals satiety, slows gastric emptying, and supports healthy insulin function helping you eat less and burn stored fat.</div>
 
-            <div><hr /></div>
-
-            <div class="heading">Who Is a Good Candidate?</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">WHO IS A GOOD CANDIDATE?</div>
+            </div>
 
             <ul>
                 <li>BMI ≥ 27 with weight related concerns, or BMI ≥ 30</li>
@@ -62,9 +65,10 @@
                 <li>Not pregnant / breastfeeding, free from med interactions (we screen)</li>
             </ul>
 
-            <div><hr /></div>
-
-            <div class="heading">What to Expect</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">WHAT TO EXPECT</div>
+            </div>
 
             <ol>
                 <li><b>Custom script:</b> We tailor strength & flavor.</li>
@@ -73,13 +77,12 @@
 
             <div class="note">*Individual results vary.</div>
 
-            <div><hr /></div>
-
-            <div class="heading">Safety & Side Effects</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">SAFETY & SIDE EFFECTS</div>
+            </div>
 
             <div class="paragraph">Most users report mild, transient nausea or heartburn during titration. Rare risks include pancreatitis or gallstones. We provide pharmacist support and notify your prescriber of any red flags.</div>
-
-            <div><hr /></div>
 
             <div class="w-full flex items-center justify-center">
                 <div class="global-btn-brown" @click="router.push({name: ROUTE_NAME.CONTACT_US})">LET’S MAKE HEALTHY HAPPEN—WITHOUT THE NEEDLE</div>
