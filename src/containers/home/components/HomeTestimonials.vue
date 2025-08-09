@@ -26,8 +26,7 @@
             </div>
 
             <div class="testimonials--container--pcca">
-                <div class="text">PROUD MEMBER OF</div>
-                <img class="cursor-pointer" src="/images/testimonials/pcca-icon.png" alt="pcca" @click="goToPCCAPage">
+                <img class="cursor-pointer h-150px w-auto" src="/images/testimonials/pcca-icon.jpeg" alt="pcca" @click="goToPCCAPage">
             </div>
         </div>
     </div>
@@ -129,8 +128,7 @@ const goToPCCAPage = () => {
 
         &--pcca {
             display: flex;
-            flex-direction: column;
-            gap: 16px;
+            justify-content: center;
             align-items: center;
 
             .text {

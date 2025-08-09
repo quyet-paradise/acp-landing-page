@@ -19,7 +19,7 @@
 
                 <div class="flex gap-64px w-full">
                     <div class="w-350px flex flex-col gap-16px">
-                        <div class="flex flex-col gap-32px">
+                        <div class="flex flex-col gap-24px">
                             <div class="flex gap-16px" v-for="item in contactInfo" :key="item?.id">
                                 <img class="w-54px h-54px" :src="item?.icon" alt="icon">
 
@@ -35,7 +35,7 @@
                             <div class="font-400 text-16px leading-23px tracking-0.32px color-[var(--dls-color-2a2a2a)]">Artisan Compounding Pharmacy is closed on all major holidays, including New Year’s Day, Memorial Day, Independence Day, Labor Day, Thanksgiving, and Christmas. <br /> We also close early on Christmas Eve and <br /> New Year’s Eve.</div>
                         </div>
                     </div>
-                    <div class="basis-[100%] flex flex-col gap-8px">
+                    <div class="basis-[100%] flex flex-col">
                         <el-form-item prop="name" class="w-full">
                             <div class="global-input-label">Name *</div>
                             <el-input v-model="contactUsForm.name" type="text" placeholder="First Name" />

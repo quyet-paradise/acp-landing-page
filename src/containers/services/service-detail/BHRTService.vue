@@ -9,10 +9,14 @@
 
             <div class="title">BIOLOGICAL HORMONE REPLACEMENT THERAPY (BHRT)</div>
 
-            <div class="paragraph">Your body runs on chemical messengers called hormones. When those messengers drop too low or get out of balance, you can feel tired, moody, hot, or simply “not yourself.” <br /> BHRT gently tops up those hormones with plant based ingredients (from wild yam or soy) that are identical to what your body already makes. Because they match your natural chemistry, they’re usually easier to absorb and tolerate than older, synthetic options.</div>
+            <div class="paragraph text-center">Your body runs on chemical messengers called hormones. When those messengers drop too low or get out of balance, you can feel tired, moody, hot, or simply “not yourself.” <br /> BHRT gently tops up those hormones with plant based ingredients (from wild yam or soy) that are identical to what your body already makes. Because they match your natural chemistry, they’re usually easier to absorb and tolerate than older, synthetic options.</div>
 
-            <div class="heading">Conditions BHRT can treat*</div>
-            <ul>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">CONDITIONS BHRT CAN TREAT*</div>
+            </div>
+            
+            <ol>
                 <li><b>Menopause and Perimenopause:</b> BHRT can alleviate common symptoms like hot flashes, night sweats, vaginal dryness, sleep problems, fatigue, weight gain, mood swings, and memory loss.</li>
                 <li><b>Low Libido and Sexual Dysfunction: </b> BHRT can help with decreased libido and sexual dysfunction in both men and women.</li>
                 <li><b>Erectile Dysfunction:</b> BHRT can be used to treat erectile dysfunction, a common issue in men as they age. BHRT can also address symptoms like fatigue, reduced libido, and muscle loss associated with andropause.</li>
@@ -28,11 +32,14 @@
                 <li><b>Premenstrual Syndrome (PMS):</b> PMS symptoms often arise from the hormonal fluctuations during the menstrual cycle. BHRT can help restore hormonal balance and alleviate PMS symptoms, such as anxiety, sleep disturbances, and mood swings. </li>
                 <li><b>Polycystic Ovary Syndrome (PCOS):</b> BHRT can help regulate hormone levels, potentially reducing symptoms like acne, excessive hair growth, and irregular periods, potentially improving fertility and reducing the risk of cysts. </li>
                 <li><b>Insulin Resistance:</b> BHRT, in combination with other strategies like diet and exercise, can help improve insulin sensitivity, a common issue in PCOS.</li>
-            </ul>
+            </ol>
 
             <div class="note">*Benefits vary from person to person. We customize every prescription to your lab results and symptoms.</div>
 
-            <div class="heading">How Our BHRT Program Works</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">HOW OUR BHRT PROGRAM WORKS</div>
+            </div>
             <ol>
                 <li><b>Consultation:</b> We listen to your symptoms, wellness goals, and medical history.</li>
                 <li><b>Doctor + Pharmacist Partnership:</b> Therapy starts with a prescription and is closely monitored with lab work.</li>
@@ -48,9 +55,10 @@
                 <li><b>Ongoing Support:</b> Your dedicated pharmacist is here for refills, questions, and lifestyle tips.</li>
             </ol>
 
-            <div><hr /></div>
-
-            <div class="heading">Quick FAQs</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">QUICK FAQ</div>
+            </div>
             <div>
                 <div class="paragraph"><b>How soon will I notice a difference?</b></div>
                 <div class="paragraph">Most people feel small improvements in 2–4 weeks and full benefits within 3–6 months.</div>
@@ -70,8 +78,6 @@
                 <div class="paragraph"><b>How long do I stay on it?</b></div>
                 <div class="paragraph">Some choose 1–2 years to get through menopause; others continue longer for bone, brain, or heart support. We review your plan every year.</div>
             </div>
-
-            <div><hr /></div> 
 
             <div class="w-full flex items-center justify-center">
                 <div class="global-btn-brown" @click="router.push({name: ROUTE_NAME.CONTACT_US})">READY TO FEEL LIKE YOURSELF AGAIN? CONTACT US</div>

@@ -11,7 +11,10 @@
                         <div class="portal--link">Provider Portal</div>
                     </div>
 
-                    <div class="shop-btn">Shop</div>
+                    <div class="shop-btn">
+                        <el-icon :size="16"><Handbag /></el-icon>
+                        <span class="mt-2px">Shop</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,7 +61,7 @@
                         </div>
 
                         <template #reference>
-                            <div class="item" @click="goToPage(ROUTE_NAME.SERVICES)">SERVICES</div>
+                            <div class="item">SERVICES</div>
                         </template>
                     </el-popover>
                     <el-popover
@@ -96,7 +99,7 @@
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HOW_TO_PRESCRIBE)">HOW TO SEND PRESCRIPTIONS</div>
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.WRITE_COMPOUNDED_RX)">HOW TO WRITE A COMPOUNDED RX</div>
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.UNAVAILABLE_MEDICATIONS)">UNAVAILABLE MEDICATIONS</div>
-                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.FAQ)">FAQ FOR PROVIDERS</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.FAQ)">FAQ</div>
 
                             <div class="my-2px w-full"></div>
 
@@ -185,11 +188,17 @@ const goToPage = (routeName: string) => {
                 }
 
                 .shop-btn {
-                    padding: 12px 24px;
-                    color: var(--dls-color-white);
-                    background: var(--dls-color-9f593f);
                     border-radius: 9999px;
+                    border: 1px solid var(--dls-color-white);
+                    padding: 12px 16px;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    color: var(--dls-color-white);
                     cursor: pointer;
+                    font-weight: 300;
+                    display: flex;
+                    gap: 6px;
+                    align-items: center;
+                    line-height: 100%;
 
                     &:hover {
                         opacity: .8;

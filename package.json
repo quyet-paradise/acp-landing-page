@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
     "@vueuse/core": "^13.3.0",
     "element-plus": "^2.10.3",
     "sass": "^1.75.0",

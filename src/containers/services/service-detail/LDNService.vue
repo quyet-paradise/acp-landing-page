@@ -9,54 +9,83 @@
 
             <div class="title">LOW-DOSE NALTREXONE (LDN)</div>
 
-            <div class="paragraph">Low-Dose Naltrexone (LDN) may help treat various conditions, particularly those involving chronic pain and autoimmune issues. </div>
+            <div class="paragraph text-center">Naltrexone was first approved in 50 mg tablets to block opioids. Low Dose Naltrexone uses just 0.5 –6 mg, about one tenth the original amount, to gently influence your own endorphins and calm an over active immune system. Think of it as a micro reset button for chronic inflammation, pain and fatigue—without blocking normal pleasure or requiring clinic visits.</div>
 
-            <div class="heading">Chronic Pain</div>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">WHY DO PEOPLE TRY LDN?</div>
+            </div>
+
             <ul>
-                <li>Fibromyalgia</li>
-                <li>Complex Regional Pain Syndrome (CRPS)</li>
-                <li>Diabetic Neuropathy</li>
-                <li>Neuropathic Pain</li>
-                <li>Other forms of chronic pain</li>
+                <li><b>Autoimmune relief</b> – Hashimoto’s, rheumatoid arthritis, psoriasis, Crohn’s, ulcerative colitis</li>
+                <li><b>Lasting pain control</b> – fibromyalgia, nerve pain, endometriosis, migraines</li>
+                <li><b>Energy & mood lift</b> – chronic fatigue, brain fog, long COVID recovery</li>
+                <li><b>Skin & gut repair</b> – eczema, hidradenitis, IBS, SIBO</li>
             </ul>
 
-            <div class="heading">Autoimmune and inflammatory conditions</div>
-            <ul>
-                <li>Crohn's Disease</li>
-                <li>Multiple Sclerosis (MS)</li>
-                <li>Hashimoto's Thyroiditis</li>
-                <li>Rheumatoid Arthritis</li>
-                <li>Lupus</li>
-                <li>Endometriosis</li>
-                <li>Psoriasis</li>
-                <li>Lichen Planopilaris (LPP)</li>
-                <li>Dermatomyositis</li>
-                <li>Scleroderma</li>
-            </ul>
+            <div class="note">(LDN is prescribed “off label.” The FDA has not evaluated LDN for the above uses. Results vary; your prescriber can tell you if it’s right for you.)</div>
 
-            <div class="heading">Other conditions</div>
-            <ul>
-                <li>Long COVID</li>
-                <li>Chronic Fatigue Syndrome (CFS/ME)</li>
-                <li>Depression</li>
-                <li>Irritable Bowel Syndrome (IBS)</li>
-                <li>Postural Orthostatic Tachycardia Syndrome (POTS)</li>
-                <li>Mast Cell Activation Syndrome (MCAS)</li>
-                <li>Some cancers (as an adjuvant therapy)</li>
-            </ul>
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">WHICH FORMULATION IS FOR YOU?</div>
+            </div>
+            
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Form</th>
+                        <th>Why Patients Love It</th>
+                        <th>Best For</th>
+                    </tr>
 
-            <div class="heading">How LDN works</div>
-            <div class="paragraph">LDN modulates the immune system and reduces inflammation. It affects opioid receptors and glial cells, which are involved in pain and inflammation pathways. LDN also influences endorphin production, according to <a href="https://drbrighten.com/low-dose-naltrexone/" target="_blank">drbrighten.com</a>. </div>
+                    <tr>
+                        <td>Plant based Capsules</td>
+                        <td>Simple, travel proof, dye free</td>
+                        <td>Most adults</td>
+                    </tr>
 
-            <div class="heading">Important considerations</div>
-            <ul>
-                <li>LDN is considered a relatively safe medication, with generally mild side effects, such as sleep disturbances, nausea, and vivid dreams.</li>
-                <li>The effectiveness of LDN can vary.</li>
-                <li>Research on LDN for some conditions, particularly long-term effects, is still limited.</li>
-            </ul>
+                    <tr>
+                        <td>Rapid Dissolve Tablets</td>
+                        <td>Melts on the tongue, no water needed</td>
+                        <td>Kids & anyone who hates pills</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sublingual Peppermint Drops</td>
+                        <td>Fast absorption, micro titration</td>
+                        <td>Sensitive stomachs, flexible dosing</td>
+                    </tr>
+
+                    <tr>
+                        <td>Transdermal Cream</td>
+                        <td>Rub on wrist</td>
+                        <td>Severe GI issues, pediatrics</td>
+                    </tr>
+
+                    <tr>
+                        <td>Slow Release Capsules</td>
+                        <td>Gentle all day effect</td>
+                        <td>Light sleepers</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">All forms can be compounded lactose free, and gluten free.</div>
+
+            <div class="flex flex-col gap-16px items-center">
+                <img class="w-40px h-auto" src="@/assets/images/services-logo.svg" alt="logo">
+                <div class="title">YOUR 4 STEP LDN JOURNEY</div>
+            </div>
+
+            <ol>
+                <li>Ask your provider for an LDN prescription (we can supply them with dosing templates).</li>
+                <li>Send it to us via e script, or fax.</li>
+                <li>Choose your form & flavor in a quick call with our pharmacist.</li>
+                <li>Receive your tailor made LDN at your door.</li>
+            </ol>
 
             <div class="w-full flex items-center justify-center">
-                <div class="global-btn-brown" @click="router.push({name: ROUTE_NAME.CONTACT_US})">CONTACT US FOR MORE INFO</div>
+                <div class="global-btn-brown" @click="router.push({name: ROUTE_NAME.CONTACT_US})">SMALL DOSE. BIG POSSIBILITIES. LET’S UNLOCK THEM TOGETHER</div>
             </div>
         </div>
     </div>
