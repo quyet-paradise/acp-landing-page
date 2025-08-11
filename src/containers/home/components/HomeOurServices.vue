@@ -53,13 +53,13 @@ const servicesList: any = [
     {
         id: 5,
         bgColor: '#B59782',
-        text: 'HAIR LOSS SOLUTIONS',
+        text: 'HAIR GROWTH',
         sub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         id: 6,
         bgColor: '#B59782',
-        text: 'DERMATOLOGICAL <br /> PREPARATIONS',
+        text: 'DERMATOLOGY',
         sub: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {

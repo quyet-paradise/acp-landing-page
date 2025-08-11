@@ -16,7 +16,7 @@
                 <div class="title">FOR HIM</div>
             </div>
 
-            <div class="paragraph">Common concerns: reduced libido, erectile dysfunction, prostate problems, reduced muscle mass.</div>
+            <div class="paragraph text-center">Common concerns: reduced libido, erectile dysfunction, prostate problems, reduced muscle mass.</div>
 
             <div class="paragraph text-center">What we can compound</div>
 
@@ -64,7 +64,7 @@
                 <div class="title">FOR HER</div>
             </div>
 
-            <div class="paragraph">Common concerns: low desire, difficulty reaching climax, dryness or discomfort.</div>
+            <div class="paragraph text-center">Common concerns: low desire, difficulty reaching climax, dryness or discomfort.</div>
             
             <div class="paragraph text-center">What we can compound</div>
 
