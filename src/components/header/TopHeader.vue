@@ -54,8 +54,8 @@
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS COMPOUNDING</div>
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.LDN_SERVICE)">LOW DOSE NALTREXONE (LDN)</div>
-                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HAIR_LOSS_SERVICE)">HAIR LOSS SOLUTIONS</div>
-                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.DERMATO_LOGICAL_SERVICE)">DERMATOLOGICAL PREPARATIONS</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HAIR_LOSS_SERVICE)">HAIR GROWTH</div>
+                            <div class="item--popover--text" @click="goToPage(ROUTE_NAME.DERMATO_LOGICAL_SERVICE)">DERMATOLOGY</div>
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.PEDIATRICS_SERVICE)">PEDIATRICS</div>
                             <div class="item--popover--text" @click="goToPage(ROUTE_NAME.VETERINARY_SERVICE)">VETERINARY COMPOUNDING</div>
                         </div>
